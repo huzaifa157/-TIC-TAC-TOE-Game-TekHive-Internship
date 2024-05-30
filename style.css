@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* generate body color from coolors website */
+background-color: #548687;
+text-align: center;
+
+
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 1.5vmin;
+    justify-content: center;
+}
+
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+   
+}
+.box{
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    font-size: 7vmin;
+    color: #191913;
+    background-color: lightyellow;
+}
+
+#reset{
+    padding: 1rem; 
+    font-size: 1.5rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+.new_btn{
+    padding: 1rem; 
+    font-size: 1.5rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 25px;
+    m
+   
+}
+.win_msg{
+    font-size: 6vmin;
+    color: gold; 
+    margin-bottom: 15px;
+}
+.draw_msg{
+    font-size: 6vmin;
+    color: gold; 
+}
+.msg_container{
+    height: 20vmin;
+}
+
+
+
+
+/* Media query for iPhone 14 */
+@media screen and (max-width: 390px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .game {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .box {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .new_btn,
+    #reset {
+        font-size: 16px;
+    }
+}
+
+
